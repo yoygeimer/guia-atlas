@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía Completa del Bot - Manual de Usuario</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #181c24;
+      color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #3a8dde 0%, #6f42c1 100%);
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px #0002;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0.5rem 0 0 0;
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+    nav {
+      background: #23283a;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px #0002;
+    }
+    nav a {
+      color: #fff;
+      background: #3a8dde;
+      padding: 0.7rem 1.2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    nav a:hover, nav a.active {
+      background: #6f42c1;
+      color: #fff;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #23283a;
+      border-radius: 1.2rem;
+      box-shadow: 0 4px 24px #0003;
+      padding: 2rem 2rem 3rem 2rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    section h2 {
+      color: #3a8dde;
+      margin-top: 0;
+      font-size: 2rem;
+      border-bottom: 2px solid #3a8dde33;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    section h3 {
+      color: #6f42c1;
+      margin-top: 1.5rem;
+      font-size: 1.3rem;
+    }
+    code, pre {
+      background: #181c24;
+      color: #f3f3f3;
+      border-radius: 0.4rem;
+      padding: 0.2rem 0.5rem;
+      font-size: 1rem;
+    }
+    pre {
+      display: block;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .tips, .errores, .soporte {
+      background: #2d3347;
+      border-left: 5px solid #3a8dde;
+      padding: 1rem;
+      border-radius: 0.7rem;
+      margin: 1.5rem 0;
+    }
+    .tips h3, .errores h3, .soporte h3 {
+      margin-top: 0;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 1rem 0.5rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+  <!-- Script eliminado para funcionamiento solo con HTML y CSS -->
+</head>
+<body>
+  <header>
+    <h1>Guía Completa del Bot</h1>
+    <p>Manual de Usuario para la gestión total de tu servidor Discord</p>
+  </header>
+    <nav>
+    <a href="categorias/introduccion.html" target="_blank" rel="noopener"><i class="fas fa-rocket"></i>Introducción</a>
+    <a href="categorias/configuracion-inicial.html" target="_blank" rel="noopener"><i class="fas fa-cogs"></i>Configuración Inicial</a>
+    <a href="categorias/sistema-de-moderacion.html" target="_blank" rel="noopener"><i class="fas fa-shield-alt"></i>Moderación</a>
+    <a href="categorias/sistema-anti-raid.html" target="_blank" rel="noopener"><i class="fas fa-user-shield"></i>Anti-Raid</a>
+    <a href="categorias/sistema-de-tickets.html" target="_blank" rel="noopener"><i class="fas fa-ticket-alt"></i>Tickets</a>
+    <a href="categorias/sistema-de-musica.html" target="_blank" rel="noopener"><i class="fas fa-music"></i>Música</a>
+    <a href="categorias/gamificacion-niveles-y-reputacion.html" target="_blank" rel="noopener"><i class="fas fa-trophy"></i>Gamificación</a>
+    <a href="categorias/sistema-de-bienvenida-y-despedida.html" target="_blank" rel="noopener"><i class="fas fa-door-open"></i>Bienvenida/Despedida</a>
+    <a href="categorias/canales-temporales.html" target="_blank" rel="noopener"><i class="fas fa-clock"></i>Canales Temporales</a>
+    <a href="categorias/notificaciones-de-plataformas.html" target="_blank" rel="noopener"><i class="fas fa-bell"></i>Notificaciones</a>
+    <a href="categorias/encuestas-y-sugerencias.html" target="_blank" rel="noopener"><i class="fas fa-poll"></i>Encuestas/Sugerencias</a>
+    <a href="categorias/inteligencia-artificial.html" target="_blank" rel="noopener"><i class="fas fa-robot"></i>IA</a>
+    <a href="categorias/informacion-y-estadisticas.html" target="_blank" rel="noopener"><i class="fas fa-chart-bar"></i>Info/Estadísticas</a>
+    <a href="categorias/funciones-adicionales.html" target="_blank" rel="noopener"><i class="fas fa-plus"></i>Adicionales</a>
+    <a href="categorias/tips.html" target="_blank" rel="noopener"><i class="fas fa-lightbulb"></i>Tips</a>
+    <a href="categorias/soporte.html" target="_blank" rel="noopener"><i class="fas fa-life-ring"></i>Soporte</a>
+  </nav>
+  <main>
+    <section style="text-align:center; margin-top:3rem;">
+      <h2>Bienvenido a la Guía Completa del Bot</h2>
+      <p>Selecciona una categoría en el menú superior para ver la información detallada de cada sistema y función del bot.</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Guía Bot" style="width:120px; margin:2rem auto 0 auto; display:block;">
+    </section>
+  </main>
+</body>
+</html>

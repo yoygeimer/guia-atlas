@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenida y Despedida - Guía del Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilo-guia.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Bienvenida y Despedida</h1>
+    <nav>
+      <a href="../index.html">Inicio</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>💬 Sistema de Bienvenida y Despedida</h2>
+      <h3>Bienvenida</h3>
+      <ul>
+        <li><b>Configurar:</b> <code>/welcome-set canal:#bienvenida mensaje:¡Bienvenido {user} a {server}!</code></li>
+        <li><b>Avanzado:</b> <code>/welcome-configure canal:#bienvenida mensaje:Texto imagen:URL</code></li>
+        <li><b>Editar:</b> <code>/welcome-edit canal:#nuevo-canal mensaje:Nuevo mensaje</code></li>
+        <li><b>Ver configuración:</b> <code>/welcome-config</code></li>
+        <li><b>Vista previa:</b> <code>/welcome-preview</code></li>
+        <li><b>Eliminar:</b> <code>/welcome-delete</code></li>
+      </ul>
+      <h3>Despedida</h3>
+      <ul>
+        <li><b>Configurar:</b> <code>/despedida-set canal:#despedidas mensaje:{user} ha abandonado {server}</code></li>
+        <li><b>Editar:</b> <code>/despedida-edit canal:#nuevo-canal mensaje:Nuevo mensaje</code></li>
+        <li><b>Eliminar:</b> <code>/despedida-delete</code></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

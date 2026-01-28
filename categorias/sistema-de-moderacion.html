@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moderación - Guía del Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilo-guia.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Moderación</h1>
+    <nav>
+      <a href="../index.html">Inicio</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>🛡️ Sistema de Moderación</h2>
+      <h3>📝 Advertencias (Warns)</h3>
+      <ul>
+        <li><b>Advertir:</b> <code>/warn usuario:@Usuario razón:Motivo</code></li>
+        <li><b>Ver advertencias:</b> <code>/warn-list usuario:@Usuario</code></li>
+        <li><b>Eliminar advertencia:</b> <code>/warn-remove usuario:@Usuario id:1</code></li>
+        <li><b>Estadísticas:</b> <code>/warn-stats</code></li>
+      </ul>
+      <h3>🚫 Sanciones</h3>
+      <ul>
+        <li><b>Banear:</b> <code>/banear usuario:@Usuario razón:Razón</code></li>
+        <li><b>Desbanear:</b> <code>/desbanear usuario_id:123456789 razón:Razón</code></li>
+        <li><b>Expulsar:</b> <code>/expulsar usuario:@Usuario razón:Razón</code></li>
+        <li><b>Mutear:</b> <code>/mutear usuario:@Usuario duracion:10m razón:Razón</code></li>
+        <li><b>Quitar mute:</b> <code>/quitarmute usuario:@Usuario razón:Razón</code></li>
+      </ul>
+      <h3>🧹 Limpieza de Mensajes</h3>
+      <p><b>Comando:</b> <code>/clear cantidad:50</code></p>
+      <h3>⏱️ Modo Lento</h3>
+      <p><b>Comando:</b> <code>/slowmode segundos:5 canal:#general</code></p>
+      <h3>🔍 Filtro de Palabras</h3>
+      <pre>/filtro accion:add palabra:palabramala</pre>
+      <pre>/filtro accion:list</pre>
+      <pre>/filtro accion:remove palabra:palabramala</pre>
+      <h3>📋 Auditoría</h3>
+      <ul>
+        <li><b>Ver logs:</b> <code>/audit-logs página:1</code></li>
+        <li><b>Estadísticas:</b> <code>/audit-stats</code></li>
+        <li><b>Configurar canal:</b> <code>/audit-channel canal:#auditoria</code></li>
+        <li><b>Limpiar logs:</b> <code>/audit-clean días:30</code></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
