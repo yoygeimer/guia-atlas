@@ -19,12 +19,46 @@
       <h2>💬 Sistema de Bienvenida y Despedida</h2>
       <h3>Bienvenida</h3>
       <ul>
-        <li><b>Configurar:</b> <code>/welcome-set canal:#bienvenida mensaje:¡Bienvenido {user} a {server}!</code></li>
-        <li><b>Avanzado:</b> <code>/welcome-configure canal:#bienvenida mensaje:Texto imagen:URL</code></li>
-        <li><b>Editar:</b> <code>/welcome-edit canal:#nuevo-canal mensaje:Nuevo mensaje</code></li>
-        <li><b>Ver configuración:</b> <code>/welcome-config</code></li>
-        <li><b>Vista previa:</b> <code>/welcome-preview</code></li>
-        <li><b>Eliminar:</b> <code>/welcome-delete</code></li>
+        <li><b>Configurar:</b> Usa <code>/welcome-configure</code> para seleccionar el canal de bienvenida y personalizar los mensajes.</li>
+        <li><b>Vista previa:</b> <code>/welcome-preview</code> muestra cómo se verá el mensaje.</li>
+        <li><b>Ver configuración:</b> <code>/welcome-config</code> muestra la configuración actual.</li>
+        <li><b>Eliminar:</b> <code>/welcome-delete</code> borra la configuración de bienvenida.</li>
+      </ul>
+      <h4>Personalización de mensajes</h4>
+      <ul>
+        <li>Al ejecutar <code>/welcome-configure</code>, selecciona el canal y luego pulsa <b>Editar resto de la configuración</b> para abrir un formulario donde puedes personalizar:</li>
+        <ul>
+          <li><b>Título DM</b> (opcional): Título del mensaje privado de bienvenida.</li>
+          <li><b>Descripción DM</b> (opcional): Texto del mensaje privado de bienvenida.</li>
+          <li><b>Título Canal</b> (opcional): Título del mensaje público en el canal.</li>
+          <li><b>Descripción Canal</b> (opcional): Texto principal del mensaje público en el canal.</li>
+          <li><b>Reglas</b> (opcional): Lista de reglas, una por línea.</li>
+        </ul>
+        <li>El canal se selecciona con el Channel Select, no dentro del formulario.</li>
+      </ul>
+      <h4>Placeholders soportados</h4>
+      <ul>
+        <li><code>{user}</code>: Menciona al usuario que entra.</li>
+        <li><code>{server}</code>: Nombre del servidor.</li>
+      </ul>
+      <h4>Flujo de configuración</h4>
+      <ol>
+        <li>Ejecuta <code>/welcome-configure</code>.</li>
+        <li>Selecciona el canal de bienvenida.</li>
+        <li>Pulsa “Editar resto de la configuración” y rellena los campos que desees.</li>
+        <li>Guarda los cambios. El bot confirmará si la configuración se guardó correctamente.</li>
+      </ol>
+      <h4>Comportamiento de los mensajes</h4>
+      <ul>
+        <li>El mensaje público menciona al usuario que entra.</li>
+        <li>Si la API no responde, el bot usará la configuración local y lo indicará en la confirmación.</li>
+      </ul>
+      <h4>Checklist para pruebas rápidas</h4>
+      <ul>
+        <li>Ejecutar <code>/welcome-configure</code>, seleccionar canal y comprobar que el botón sigue activo.</li>
+        <li>Editar la “Descripción Canal”, guardar y ver la confirmación.</li>
+        <li>Revisar que el mensaje de bienvenida se envía correctamente cuando un usuario entra.</li>
+        <li>Simular caída de la API y comprobar que el bot usa la configuración local.</li>
       </ul>
       <h3>Despedida</h3>
       <ul>
